@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetWindows", "DotNetWindows\DotNetWindows.csproj", "{3002836C-DA1E-4D70-AFB3-C83E1A83636E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore", "DotNetCore\DotNetCore.csproj", "{76AB8A26-2732-4E9B-8AA9-9AEB88928887}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3002836C-DA1E-4D70-AFB3-C83E1A83636E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3002836C-DA1E-4D70-AFB3-C83E1A83636E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3002836C-DA1E-4D70-AFB3-C83E1A83636E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3002836C-DA1E-4D70-AFB3-C83E1A83636E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76AB8A26-2732-4E9B-8AA9-9AEB88928887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76AB8A26-2732-4E9B-8AA9-9AEB88928887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76AB8A26-2732-4E9B-8AA9-9AEB88928887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76AB8A26-2732-4E9B-8AA9-9AEB88928887}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D84DCD22-C77A-4858-AA3C-3D1218351748}
+	EndGlobalSection
+EndGlobal
