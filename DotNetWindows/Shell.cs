@@ -8,15 +8,16 @@ namespace Jitsukawa.Extensions.Shell
     public static class Shell
     {
         /// <summary>
-        /// Executa um comando no terminal do Windows e captura sua saída.
+        /// Executa um comando e captura sua saída.
         /// </summary>
-        /// <param name="directory">Diretório no qual o comando deve executar.</param>
-        /// <param name="parameters">Parâmetros do comando ou aplicativo invocado.</param>
-        /// <param name="output">Resultado que seria exibido no terminal do Windows.</param>
-        /// <returns>Código de retorno do comando ou aplicativo executado.</returns>
-        public static int Run(this string command, string directory, string parameters, out string output)
+        /// <param name="command">Comando que deve ser executado.</param>
+        /// <param name="directory">Diretório em que deve executar.</param>
+        /// <param name="parameters">Parâmetros do comando.</param>
+        /// <returns>Código de retorno do comando e sua saída para o sistema.</returns>
+        public static (int Code, string StdOut) Run(this string command, string directory, string parameters)
         {
             int retorno = -1;
+            string saida;
 
             var argumentos = new ProcessStartInfo(command, parameters);
             argumentos.CreateNoWindow = true;
@@ -30,12 +31,12 @@ namespace Jitsukawa.Extensions.Shell
             {
                 processo.StartInfo = argumentos;
                 processo.Start();
-                output = processo.StandardOutput.ReadToEnd();
+                saida = processo.StandardOutput.ReadToEnd();
                 processo.WaitForExit();
                 retorno = processo.ExitCode;
             }
 
-            return retorno;
+            return (retorno, saida);
         }
     }
 }
