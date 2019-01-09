@@ -46,6 +46,7 @@
     <Compile Include="Criptography.cs" />
     <Compile Include="Email.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="Mathematics.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection.cs" />
     <Compile Include="Serializer.cs" />
